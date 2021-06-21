@@ -1,0 +1,278 @@
+/*General roles*/
+*{box-sizing: border-box;}
+body{
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color:#f2f2f7;
+	font-size: 15px;
+}
+/*Nav bar Part Start*/
+nav{
+	background-color: #fff;
+	display: fixed;
+	z-index: 1;
+}
+nav ul{padding: 0;margin: 0;}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 12px;
+	font-size: 25px;
+	
+}
+nav ul li a{text-decoration: none;}
+nav ul .logo a {color:#f30707c7;font-weight: bold;}
+nav ul .search{float: right;}
+nav ul li .fa-map-marker{margin-right: 10px;}
+nav ul li:hover{background-color: red;color: #fff}
+nav ul .logo a:hover{background-color: red;color: #fff}
+nav::after {content: "";clear: both;display: table;}
+/*#2 End of Nav bar */
+/*#3 Header Part */
+header{
+position: relative;
+}
+img{width: 100%;position: relative;}
+header .head-info{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width:65%;
+	background-color: #fff;	
+}
+header .small-nav{
+	display: inline-block;
+	background-color: #000;	
+	margin-bottom: 0;
+	width: 100%
+}
+header .small-nav button{
+	padding: 8px 16px;
+	color: #fff;
+	border: none;
+	background: none;	
+	font-size: 16px;
+	overflow: hidden;
+}
+header .small-nav .active{background-color: red;}
+header .small-nav button .fa{margin-right: 2px;}
+header .small-nav button:hover,
+.btn:hover{background-color: #D3D3D3;color: #000;cursor: pointer;}
+/*start of Flight Part*/
+
+header .flight,header .hotel,header .rental{margin-left:1.5%;overflow: hidden;}
+header .flight .half{width: 50%;float: left;margin-bottom: 20px;}
+header .flight .half label{font-size: 16px}
+header .flight .half input,header .rental input{
+	border: 1px solid #CCC;
+	padding: 12px 10px;
+	display: block;
+	width:98%;
+	margin-top: 12px;
+	margin-bottom: 8px
+}
+/* End of flight Part*/
+/*start of Hotel part*/
+header .hotel p{
+	margin-bottom: 3%;
+	font-size: 16px;
+}
+/*End of Hotel Part*/
+/*start of Rental part*/
+header .rental span{
+	background-color: red;
+	display: inline-block;
+	padding: 8px 6px;
+	color: #fff
+}
+/*End of Rental part*/
+/*#3 End of Header */
+/*#4 Start of Container*/
+.container{
+	max-width: 85%;
+	margin: 0 auto;	
+}
+/*# Start of offers part*/
+.container .offers,.container .explore{margin-top: 4%;}
+.row .col-50,.row .half .col-25{
+	position: relative;
+	color:white;
+	text-align: center;
+}
+.row .half{width: 50%}
+.row .bottom-text{
+	position: absolute;
+	bottom: 12px;
+	left: 12px;
+	font-size: 17px;
+}
+.top-half ,.bottom-half{width:100%;}
+.row .half .top-half .col-25,.row .half .bottom-half .col-25{
+width: 49%;
+max-width: 49%;
+margin-right:.5%;
+margin-left: .5%;
+}
+.row .half .top-half .col-25{margin-bottom: 1%;}
+.row .half .bottom-half .col-25{margin-top: 1%;}
+.last{float: left;}
+/*End of offers Part*/
+/*Start of Explore Part*/
+.container .explore .west{
+	margin-right: .8%;
+    margin-left: 0;
+    }
+.container .explore .explore-info .half{background-color: #fff;}
+.container .explore .explore-info .half .info{margin:18px;}
+.container .explore .explore-info .half .info span{margin-top:20px;color: #000;opacity: 0.6}
+.container .explore .explore-info .half .info p{margin: 20px 0}
+.container .explore .explore-info .half .info button{
+	background: none;
+	padding: 12px 16px;
+	border: none;
+	font-size: 15px;
+}
+.container .explore .explore-info .half .info button:hover{
+	background-color: #b4b0bb;
+	cursor: pointer;
+}
+/*End of Explore Part*/
+/* Start of Newsletter Part*/
+.container .newsform{margin-top: 2%;}
+.container .newsletter{
+	padding: 1%;
+	background-color: #000;
+	opacity: 0.6;
+	color: #fff;
+}
+.container .newsletter{
+	margin: 30px 0;
+}
+.container .newsletter h2{
+	padding-top: 20px;
+	padding-left: 1%;
+}
+.news-padd{padding-left: 1%;}
+.container .newsletter form input[type="text"]{
+	margin: 1%;
+	display: block;
+	padding: 12px 16px;
+	width: 98%
+}
+.container .newsletter form button{
+	margin-left: 1%;
+	margin-top: 1%;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+	text-decoration: none;
+	background-color: #f44336;
+	padding: 10px 14px;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 25px;
+	border: none;
+}
+.container .newsletter:hover{
+	opacity: 1;
+}
+.container .newsletter form button:hover{background-color: lightgray;color: #000}
+/*End of NewsLetter Part*/
+/*start Of Foooter*/
+footer ul{
+ list-style-type: none;
+ margin-bottom: 20px;
+ margin-right: 0;
+ padding: 0;
+}
+footer .contact li{
+ margin-top:10px; 
+ margin-right: 0;
+}
+footer .contact li .fas{
+	margin-right: 8px;
+}
+footer form input[type="text"],footer form input[type="email"]{
+	display: block;
+	margin-bottom: 12px;
+	border: 1px solid lightgray;
+	width: 98%;
+	padding: 16px 16px;
+}
+footer form input[type="submit"]{
+	display: inline-block;
+	background-color: #000;
+	color: #fff;
+	padding: 16px 16px;
+	border: 1px solid lightgray;
+}
+footer form .send:hover{background-color: lightgray;color: #000;}
+footer .find-us{text-align: center;margin-bottom: 100px}
+footer .find-us ul li{
+	display: inline-block;
+	margin-left: 5px;
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+footer .find-us ul li .fab:hover{color: lightgray;cursor: pointer;}
+footer .find-us span{font-size: 16px}
+/*End of Footer*/
+@media only screen and (max-width: 700px) {
+	header{
+		display: none;
+	} 
+	.explore .row .half{
+	width:100%;
+	}
+	.news-padd{padding-left: 2%;}
+	.offers .row .half{width: 100%}
+.top-half ,.bottom-half{width:100%;}
+.row .half .top-half .col-25,.row .half .bottom-half .col-25{
+width: 100%;
+max-width: 100%;
+margin-top: 1%;
+}
+
+}
+/*#4 End of Container*/
+/*my Framework*/
+
+h3{margin-top:20px;font-size:21px;line-height: 1.8;font-weight: 550;}
+h2{font-size: 26px;font-weight: 550}
+.btn{
+	display: block;
+	text-align: center;
+	margin-bottom: 3%;
+	padding: 10px 12px;
+	background-color: #7d7474;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+}
+img{vertical-align: middle;}
+.row{
+	display: flex;
+	flex-wrap:wrap;
+	padding: 0 4px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row .half{
+	width:49%;
+}
+::placeholder{
+	font-size: 16px;
+	color:lightgray;
+	margin-left: 3px;
+}
+/*at media screen*/
+@media screen and (max-width: 600px) {
+  header .info-head{
+    display: none;
+  }
+}

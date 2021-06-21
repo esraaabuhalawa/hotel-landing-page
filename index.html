@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Hotel</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/127d602210.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li class="logo">
+					<a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Logo</a>
+				</li>
+				<li class="search"><i class="fa fa-search" aria-hidden="true"></i>
+				</li>
+			</ul>
+		</nav>
+		<header>
+			<img src="images/london2.jpg" alt="banner">
+			<div id="" class="head-info">
+			<div class="small-nav">
+					<button class="tabLink active" onclick="myFunction('flight')">
+						<i class="fa fa-plane" aria-hidden="true"></i>
+						Flight
+					</button>
+					<button class="tabLink" onclick="myFunction('hotel')">
+						<i class="fa fa-bed" aria-hidden="true"></i>
+						<span>Hotel</span>
+					</button>
+					<button class="" onclick="myFunction('rental')">
+						<i class="fa fa-car" aria-hidden="true"></i>
+						<span>Rental</span>
+					</button>
+				</div>
+				<div id="flight" class="listName flight" style="display:block">
+					<h3>Travel the world with us</h3>
+					<form>
+						<div class="half">
+							<label>From</label>
+							<input type="text" placeholder="Departing Form">
+						</div>
+						<div class="half">
+							<label>To</label>
+							<input  type="text"placeholder="Arriving at" >
+						</div>
+						<button class="btn">Search and find dates</button>
+					</form>
+				</div>
+				<div id="hotel" class="hotel listName " style="display:none">
+					<h3>Find the best hotels</h3>
+					<p>Book a hotel with us and get the best fares and promotions.</p>
+					<p>We know hotels - we know comfort.</p>
+					<button class="btn">Search Hotels</button>
+				</div>
+				<div id="rental" class="listName rental" style="display:none">
+					<h3>Best car rental in the world!</h3>
+					<p>
+						<span class="active">DISCOUNT!</span>&nbsp Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs
+					</p>
+					<input  type="text"placeholder="Pick-up point" >
+					<button class="btn">Search Availability</button>
+				</div>
+			</div>
+		</header>
+		<!-- start Container-->
+		<div class="container">
+			<div class="offers">
+				<h2>Good Offers Right NoW</h2>
+				<p>Up to <strong>50% </strong>discount</p>
+				<div class="row grid-image">
+					<div class="half col-50">
+						<img src="images/cinqueterre-1.jpg">
+						<span class="bottom-text">Cinque Terre</span>
+					</div>
+					<div class="half">
+						<div class="top-half">
+							<div class="col-25 last">
+								<img src="images/newyork2.jpg">
+								<span class="bottom-text">New York</span>
+							</div>
+							<div class="col-25 last">
+								<img src="images/sanfran.jpg">
+								<span class="bottom-text">San Francisco</span>
+							</div>
+						</div>
+						<div class="bottom-half">
+							<div class="col-25 last">
+								<img src="images/pisa.jpg">
+								<span class="bottom-text">Pisa</span>
+							</div>
+							<div class="col-25 last">
+								<img src="images/paris.jpg">
+								<span class="bottom-text">Paris</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--Explore Start-->
+			<div class="explore">
+				<h2>Explore Nature</h2>
+				<p>Travel with Us and see nature at its finest.</p>
+				<div class="row explore-info">
+					<div class="west half">
+						<img src="images/ocean2.jpg" alt="moceans">
+						<div class="info">
+							<h3>West Coast, Norway</h3>
+							<span>Roundtrip from $79</span>
+							<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+							<button>Buy Tickets</button>
+						</div>
+					</div>
+					<div class="mountain half">
+						<img src="images/mountains2.jpg">
+						<div class="info">
+							<h3>Mountains, Austria</h3>
+							<span>One-way from $39</span>
+							<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+							<button>Buy Tickets</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--News Letter Start-->
+			<div class="newsform">
+				<div class="newsletter">
+					<h2 class="news-padd">Get the best offers first!</h2>
+					<p class="news-padd">Join our newsletter.</p>
+					<form>
+						<label class="news-padd">E-mail</label>
+						<input type="text" placeholder="Your Email address">
+						<button>Subscribe</button>
+					</form>
+				</div>
+			</div>
+			<!--News Letter End-->
+			<footer>
+				<h2>Contact</h2>
+				<p>Let us book your next trip!</p>
+				<ul class="contact">
+					<li><i class="fas fa-map-marker-alt"></i>Chicago, US</li>
+					<li> <i class="fas fa-phone-alt"></i>Phone: +00 151515</li>
+					<li><i class="fas fa-envelope"></i>Email: mail@mail.com</li>
+				</ul>
+				<form>
+					<input type="text" placeholder="Name" name="name" required>
+					<input type="Email" placeholder="Email" required>
+					<input type="text" placeholder="Message">
+					<input class="send" type="submit" value="SEND MESSAGE">
+				</form>
+				<div class="find-us">
+					<h3>Find Us On</h3>
+					<ul>
+						<li><i class="fab fa-facebook-square"></i></li>
+						<li><i class="fab fa-instagram"></i></li>
+						<li><i class="fab fa-snapchat"></i></li>
+						<li><i class="fab fa-pinterest-p"></i></li>
+						<li><i class="fab fa-twitter"></i></li>
+						<li><i class="fab fa-linkedin-in"></i></li>
+					</ul>
+					<span>All Rights Reserved 2020</span>
+				</div>
+			</footer>
+		</div>
+		<!--End Container-->
+		<script type="text/javascript">
+		function myFunction(partName) {
+		  var i;
+		  var x = document.getElementsByClassName("listName");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  document.getElementById(partName).style.display = "block";
+		}
+		
+		</script>
+	</body>
+</hml>
